@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(27, 27, 121);
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.header img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.hamburger{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+@media (min-width: 460px) {
+    .hamburger{
+        display: none;
+    }
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 460px) {
+    nav{
+        display: none;
+    }
+
+}
+@media (max-width: 375px) {
+    .body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.Explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 81, 81);
+    width: 30%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+.Explore h2{
+    padding: 10px;
+}
+.bookbtn{
+    color: black;
+    background-color: rgb(255, 187, 0);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.element{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.element img{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+p{
+    padding: 10px;
+    text-align: center;
+}
+.price{
+    color: rgb(21, 50, 180);
+}
+.last{
+    background-color: rgb(172, 242, 242);
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(21, 50, 180);
+}
+.reviews{
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+}
+.review{
+    width: 25%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10PX;
+    color: black;
+}
+.review h6{
+    font-weight: normal;
+    padding-top: 20px;
+}
+.review img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.wats{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+}
+.wats img{
+    border-radius: 100%;
+    width: 100%;
+    height: 45px;
+}
+footer{
+    background-color: rgb(43, 38, 38);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+@media (max-width:700px) {
+    .body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .element{
+        width: 80%;
+    }
+    .Explore{
+        width: 70%;
+    }
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .review{
+        width: 70%;
+    }
+}
